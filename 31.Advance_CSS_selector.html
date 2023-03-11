@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="download2.jpg" type="image/x-icon">
+    <title>Advanced CSS Selectors</title>
+    <style>
+        h1 {
+            background-color: rgb(249, 190, 190);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        /* if p is contained by any li which is contained by div */
+        div li p {
+            color: rgb(255, 234, 0);
+            background-color: rgb(120, 185, 120);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        /*Applied to all the paragraph inside div*/
+        div span p {
+            color: rgb(128, 43, 0);
+            background-color: rgb(255, 166, 0);
+            font-weight: bold;
+            font-size: 30px; 
+        }
+
+        /*if p is right inside div then this CSS will be applied i.e.<p> is the direct child of div*/
+        div>p {
+            background-color: lightblue;
+            color: white;
+            font-size: 30px;
+        }
+
+        /*Applied to <p> if p is right after div i.e p is the next sibling of div*/
+        div+p {
+            color: white;
+            background-color: #f1211e;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a paragraph and it is not immediately after the div element so no CSS will be applied to
+                        it.</p>
+                </li>
+            </ul>
+            <p> This is the second paragraph and it is not immediately after the div element so no CSS will be applied
+                to it.</p>
+        </div>
+        <p> This is the third pargraph and it will get affected because it is immediately afetr the div tag.</p>
+    </div>
+    <div>
+        <span>
+            <p> This is the outer most paragraph and it will also get affected because it is immediately after the div tag. </p>
+        </span>
+    </div>
+</body>
+
+</html>

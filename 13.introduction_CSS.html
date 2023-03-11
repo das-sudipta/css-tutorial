@@ -1,0 +1,42 @@
+<!-- CSS gives style to raw HTML..       
+It stands for Cascading Style Sheets..
+CSS is used to give style to our web pages..
+CSS is used to make websites responsive.Responsive means that the site will behave accordingly to the different screen sizes..
+CSS takes the responsibility of design in your website..
+
+
+The syntax of CSS is-
+                     P { color: blue; }
+P stands for the selector and it decides which part of the HTML the CSS will be applied. It states where the CSS property is to be applied.
+Property is used to describe which property you want to change or add. Whether you have to change colour, border, background, width, all these come under property. 
+The last section is for defining the value. All the properties will be changed according to the value we provide.
+
+We can also target multiple properties at one time. The syntax is as follows-
+        header, p.intro { background-color: red;
+                              border-radius: 3px,
+                         }
+In the above example, we have changed the header tag and the paragraph tag with a class intro to change the background colour to red and border-radius to 3 pixels.
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Tutorial</title>
+    <style>
+        p{
+            color:rgb(242, 9, 165);
+            background-color: cornsilk;
+            border: 5px solid black;
+        }
+        </style>
+</head>
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <p style="color: rgb(35, 179, 241);font-size: 50px;border: 9px solid red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML/CSS</p> 
+    <p>This tutorial will teach you everything you need to know about HTML/CSS</p>
+</body>
+</html>

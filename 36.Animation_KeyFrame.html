@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and key frame</title>
+    <style>
+        .container {
+            background-color: rgb(206, 243, 231);
+            display: flex;
+        }
+
+        .box1 {
+            background-color: blueviolet;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin: 50px;
+            text-align: center;
+
+            animation-name: sudipta2;
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+            animation-fill-mode:forwards;
+            animation-timing-function:ease-in;
+            /* animation-delay: 3s; */
+            animation-direction:reverse;
+            
+            /* These properties can be set using this shorthand *
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: sudipta1 4s ease-in 2s 5 reverse forward; */
+        }
+        .box2{
+            background-color: rgb(149, 239, 141);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            margin: 50px;
+            border: 4px solid black;
+            border-radius: 10px;
+            text-align: center;
+
+            animation-name: sudipta1;
+            animation-duration: 2s;
+            animation-iteration-count: 3; 
+            /* z-index: -1;*/
+            opacity: 0.5;
+            /* animation: sudipta1 1s ease-in 1s 3 ; */
+        }
+
+        @keyframes sudipta1 
+        {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+
+
+        @keyframes sudipta2
+         {
+            0%{
+                top: 0px;
+                left:0px;
+            }
+            30%{
+                top: 0px;
+                left:500px;
+            }
+            60%{
+                top: 450px;
+                left:500px;
+            }
+            100%{
+                top: 250px;
+                left:400px;
+            } 
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">this is a box. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum nisi vitae in
+            dolor. Dicta inventore a, incidunt sunt perferendis velit consequatur ullam delectus libero, impedit placeat
+            officia in. Deserunt minus fugiat perferendis.</div>
+        <div class="box2">this is box 2</div>    
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!-- >> The important point to remember about these variables is it can be used within its scope only. To make it work, we can write it again or can use the --root property. To make it understand clearer, we can make a global variable in terms of programming language.
+
+>> Any custom properties written in the root variable can be accessed anywhere in the code. In most of the cases, we use primary color and danger color as shown in the above example.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="logo5.png" type="image/x-icon">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root{
+            --primary-color: rgb(48, 48, 211);
+            --danger-color: #fa0404;
+            --maxw: 800px;
+        }
+        .box{
+            width:500px;
+            height: 500px;
+            background-color: var(--primary-color);
+            border: 5px solid rgb(14, 240, 85);
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 4px var(--danger-color);
+            margin: 2px 9px;
+           text-align: center;
+           
+        }
+        .container{ 
+            max-width: var(--maxw);
+            margin: auto;
+            background-color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+        h3{
+         
+          text-align: center;
+          color: chartreuse;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><h3>This is box 1 </h3></div>
+        <div class="box"><h3>This is box 2 </h3> </div>
+        <div class="box"><h3>This is box 3 </h3></div>
+    </div>
+</body>
+</html>

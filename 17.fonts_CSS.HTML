@@ -1,0 +1,50 @@
+<!-- In CSS, we have two types of fonts- web-safe fonts and web fonts. Web saved fonts are the fonts that come pre-installed with most of the operating systems, therefore, using these fonts you will never encounter any error. But on the other hand, some fonts are not shipped with the OS; so to use them, we need to import them from the web.
+
+We can also use the technique of font stack. A font stack is a list of fonts that are listed in order of preference you would like them to appear in case some fonts are not loading. The example of this is shown below-
+    p {font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+Font Size is used to set the size of a font. In the above example, we used our font size to be 33px. Pixel ‘px’ is the unit of the font size and it is 1/96th of an inch.
+                font-size: 23px; 
+
+The next property is line-height. Line-height is the spacing between the fonts (current font and previous font).
+                line-height: 1.8em;
+
+Next property is font-weight. The font weight property sets how thick or thin character in text should be displayed.    
+                font-weight: bold;           
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts In CSS</title>
+    <style>
+        p{
+            font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:30px;
+            border: 3px solid rgb(255, 0, 212);
+            border-radius: 10px;
+            font-weight:900;
+            line-height: 2.0em;
+            color: chartreuse;
+        }
+       span{
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(242, 9, 9);
+      }
+      h2{
+        color: darkblue;
+
+      }
+    </style>
+</head>
+<body>
+    <h2>Fonts In CSS</h2>
+    <p>lets play with fonts. It is very exciting.</p>
+    <span>this is a span with 40 words. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eligendi! </span>
+</body>
+</html>

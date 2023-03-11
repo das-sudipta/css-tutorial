@@ -1,0 +1,89 @@
+<!-- >> The box-shadow CSS property adds shadow effects around an element’s frame. We can set multiple effects separated by commas. It is described by X and Y offsets relative to the element, blur and spread radius, and colour. 
+
+>> The text-shadow CSS property adds a shadow to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations. It is also described by some combination of X and Y offsets from the element, blur radius, and colour.
+
+>> If we write the above values in the negative, the shadow will move towards up. In the same way, we can apply the blur-radius property to the boxes. This property is used to make the border blur. The other property is spread-radius. It is used to spread the color around the box.
+
+>> To make all these changes inside the box, we can use the inset property as follows-
+    box-shadow: inset 3px 5px green
+
+>>  All the properties like blur-radius and spread-radius can also be used here. We can use the negative values here also to see the changes towards the upside.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo5.png" type="image/x-icon">
+    <title>Box shadow and Text shadow</title>
+    <style>
+
+        .container {
+            display: flex;
+            border: 2px solid rgb(55, 49, 49);
+            width: 100%;
+            background-color: rgb(88, 204, 181);
+            height: 100vh;
+            border-radius: 10px;
+
+        }
+
+        .card {
+            padding: 23px 15px;
+            margin: 10px;
+            border: 3px solid blue;
+            border-radius: 10px;
+            background-color: rgb(212, 249, 209);
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 10px rgb(110, 9, 224); */
+           /* box-shadow: -10px -13px rgb(57, 211, 57); */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 7px 15px 30px rgb(0, 15, 0); */
+            /* box-shadow: -7px -5px 10px rgb(3, 42, 3); */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: -7px -50px 50px 80px rgb(2, 28, 2); */
+            /* box-shadow: -7px -5px 10px 4px rgba(1, 13, 13, 0.5); */
+
+            box-shadow: inset 10px 15px 10px rgb(230, 118, 146);
+
+            /* box-shadow: 6px 9px rgb(144, 115, 225), 8px 9px rgb(141, 238, 136); */
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 4px rgb(241, 195, 175); */
+            /* text-shadow: 0px 7px 7px rgb(101, 233, 94); */
+            text-shadow: 0px 7px 2px rgb(234, 116, 234);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>I have started C++ course which does not mean that we will stop this course. We will continue this course
+                to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium, doloremque
+                enim repellat impedit autem nostrum facilis odio omnis optio voluptates beatae mollitia temporibus
+                voluptas consequuntur harum animi totam molestiae labore architecto ratione qui!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat doloribus molestiae velit
+                ipsum, aliquam officia ratione excepturi in officiis, incidunt quo est pariatur tempore ex, distinctio
+                nostrum! Sint non doloribus rem obcaecati sunt.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Backend Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur molestiae, placeat quas perferendis
+                quibusdam atque omnis distinctio obcaecati dolor, tempora unde deserunt iure nam. Iste labore eveniet
+                esse deserunt?</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!-- There are three methods of writing CSS- Inline, Internal, and External.
+
+<!Inline CSS allows you to apply a unique style to one HTML element at a time. You can assign the Inline CSS to a specific HTML element by using the style attribute with any CSS properties defined within it.
+<start..body>
+    <h1>This is CSS tutorial</h1>
+     <p style= “color: red;”>This tutorial will teach you everything you need to know about CSS</p>
+</end..body>
+
+
+Internal CSS is used to define a style tag for a single HTML page. It is defined in the <head> section within a <style> element. Let us understand the External CSS with the help of an example.
+            <head>
+                <style>
+                        p{
+                            color: purple;
+                            }
+                <style>
+            <head>  
+One important point to note here is, Inline CSS is given more priority than Internal CSS. 
+
+
+External CSS is mostly used when you want to make changes on multiple pages. It is an ideal condition because it facilitates you to change the look of the entire website by changing just one file. We will add the stylesheet in the <head> section using <link> tag.
+            <head>
+                <link rel= “stylesheet” href= “tut13.css”>
+            <head>
+Then in tut13.css file, we can write our CSS-
+
+p{
+       Color: greenyellow;
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Type of CSS</title>
+    <style>
+        p {
+            color: aqua;
+            background-color: rgb(224, 208, 239);
+        }
+
+        ul li {
+            color: blue;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>name</li>
+        <li>address</li>
+        <li>contact</li>
+        <li>others</li>
+    </ul>
+</body>
+
+</html>

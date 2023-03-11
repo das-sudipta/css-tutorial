@@ -1,0 +1,133 @@
+<!-- >> 1.Transition-property- It is used to decide which transition property we want to use. For example, if we want to transition background color
+
+>> 2.Transition-duration- If we want to see the duration which is required to make the change, we can use this property. For example, if we set transition duration as 1seconds, then the transition will happen in 1 second only.
+
+>> 3.Transition-timing-function- This property is used to decide the speed of transition from beginning to end. These are of three types as follows-
+    ease-in
+            After applying this, the animation will start slowly and becomes fast towards the end.
+
+    ease-out
+            After applying this, the animation will begin fastly and become slow towards the end.
+
+    ease-in-out
+            After applying this, the animation will start slowly, then become fast in the midway, and ends slowly.
+
+>> 4.Transition-delay- It is that particular time interval after which the transition effect will start. For example, if we set it as 2s, then the transition effect will start after 2 seconds only. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        
+        }
+
+        header::before {
+            background: url('../logo4.jpg')no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            border: 4px solid white;
+        }
+        
+        #box {
+            display: flex;
+            height: 200px;
+            position: relative;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(244, 12, 59);
+            border: 4px solid white;
+            border-radius: 8px;
+            background-color: rgb(226, 239, 84);
+            justify-content: center;
+            align-items: center;
+
+            transition-property:backgroung-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; 
+             transition-delay: 1s;
+
+            /* Transition short hand property in one line */
+            /*transition: property duration timing-function delay*/
+            /* transition: background-color 1s ease-in-out 2s; */
+
+
+            /* transition: all 1s ease-in-out .3s; */
+                animation-name: sudipta2;
+              animation-duration: 1s;
+              animation-iteration-count: 10;
+        }
+        #box:hover{
+            background-color: rgb(243, 146, 225);
+            height: 250px;
+            width: 250px;
+            border-radius: 40px;
+            
+        } 
+   
+ 
+        @keyframes sudipta2 {
+            0%{
+                top: 0px;
+                left:0px;
+            }
+            30%{
+                top: 0px;
+                left:200px;
+            }
+            60%{
+                top: 200px;
+                left:200px;
+            }
+            100%{
+                top: 100px;
+                left:0px;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>This is CSS Transition tutorial</h2>
+        <div class="container">
+            <div id="box">
+                this is my box. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rem voluptates
+                alias
+                impedit, assumenda sapiente non velit aliquid ullam officia, animi aspernatur sit est tempore quam quas
+                dicta quaerat natus libero? Nemo?
+            </div>
+
+        </div>
+    </header>
+</body>
+
+</html>

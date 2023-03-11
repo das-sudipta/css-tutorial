@@ -1,0 +1,75 @@
+<!-- CSS selectors are used to select any content you want to style. These are the part of CSS ruleset. CSS selectors select HTML elements according to its id, class, type, attribute, etc.
+
+CSS Selectors are used to target HTML elements.
+Selectors make it easy for us to easily target single/multiple HTML elements in the markup.
+
+We will see four types of CSS Selectors:
+        1> CSS element Selector
+        2> CSS id Selector
+        3> CSS class Selector
+        4> The CSS grouping Selector -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector -- apply to all excepting Grouping Selector*/
+        p {
+            border: 3px solid rgb(255, 0, 242);
+            font-style: italic;
+            color: rgb(8, 0, 255);
+        }
+
+        /* Id selector */
+        #firstPara {
+            color: green;
+            background-color: rgb(206, 241, 241);
+            font-size: 30px;
+        }
+
+        #thirdPara {
+            color: rgb(252, 13, 13);
+            background-color: rgb(248, 237, 181);font-size: 30px;
+        }
+
+        /* Class selector */
+        .bgBlue {
+            color: rgb(240, 7, 7);
+            background-color: rgb(236, 229, 229);
+        }
+
+        /* Grouping selector */
+        footer,
+        span {
+            background-color: rgb(161, 245, 178);
+            border: 5px solid rgb(6, 23, 23);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara"> first para Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum, quidem nemo sit repellat nihil
+        minus ret nostrum, a nemo nesciunt, possimus nulla maxime. Reprehenderit eligendi soluta, totam ab rerum facere
+        numquam eius.</p>
+
+    <p id="thirdPara"> thirdpara Lorem ipnderit eligendi soluta, totam ab rerum facere numquam eius.</p>
+
+    <p id="secondPara" class="redElement bgBlue">secondpara This is a another simple paragraph to demonstrate css ea eunt iste
+        ipsam numquam placeat eius adipisci? Commodi illum laudantium unde nulla, expedita, placeat accusamus ad dolo
+    </p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <span>this is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+
+</html>
